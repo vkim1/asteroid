@@ -25,4 +25,5 @@ class CircleShape(pygame.sprite.Sprite):
         distance = self.position.distance_to(object.position)
         r1 = self.radius
         r2 = object.radius
-        return (distance < (r1 + r2))
+        return (distance <= (r1 + r2))
+
